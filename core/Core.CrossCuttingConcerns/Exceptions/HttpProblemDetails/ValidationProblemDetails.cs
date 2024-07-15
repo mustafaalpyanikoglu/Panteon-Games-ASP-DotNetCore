@@ -11,7 +11,7 @@ public class ValidationProblemDetails : ProblemDetails
         Title = "Validation error(s)";
         Detail = "One or more validation errors occurred.";
         Errors = errors;
-        Status = StatusCodes.Status400BadRequest;
+        Status = StatusCodes.Status422UnprocessableEntity;
         Type = "https://example.com/probs/validation";
     }
 }
