@@ -29,7 +29,7 @@ public class UserOperationClaimController : BaseController
         DeleteUserOperationClaimDto result = await Mediator.Send(deleteUserOperationClaimCommand);
         return Ok(result);
     }
-    [HttpPost("update")]
+    [HttpPut("update")]
     public async Task<IActionResult> Update([FromBody] UpdateUserOperationClaimCommand updateUserOperationClaimCommand)
     {
         UpdateUserOperationClaimDto result = await Mediator.Send(updateUserOperationClaimCommand);

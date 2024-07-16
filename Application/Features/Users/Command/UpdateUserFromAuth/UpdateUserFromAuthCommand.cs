@@ -1,5 +1,4 @@
-﻿using Application.Services.AuthService;
-using AutoMapper;
+﻿using AutoMapper;
 using Core.Security.Hashing;
 using Application.Services.Repositories;
 using Domain.Concrete;
@@ -7,6 +6,7 @@ using MediatR;
 using static Application.Features.Users.Constants.OperationClaims;
 using Application.Features.Users.Dtos;
 using Application.Features.Users.Rules;
+using Application.Services.AuthServices;
 
 namespace Application.Features.Users.Command.UpdateUserFromAuth;
 
