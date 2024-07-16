@@ -223,6 +223,14 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.27.0, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.27.0, )"
+            },
             "System.Linq.Dynamic.Core": {
               "target": "Package",
               "version": "[1.4.3, )"

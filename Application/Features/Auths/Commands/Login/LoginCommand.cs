@@ -1,7 +1,7 @@
 ﻿using Application.Features.Auths.Dtos;
 using Application.Features.Auths.Rules;
-using Application.Services.AuthService;
-using Application.Services.UserService;
+using Application.Services.AuthServices;
+using Application.Services.UserServices;
 using Domain.Concrete;
 using MediatR;
 using AccessToken = Core.Security.Jwt.AccessToken;
