@@ -1,6 +1,6 @@
 ﻿using Application.Features.Auths.Dtos;
 using Application.Features.Auths.Rules;
-using Application.Services.AuthService;
+using Application.Services.AuthServices;
 using AutoMapper;
 using Domain.Concrete;
 using MediatR;

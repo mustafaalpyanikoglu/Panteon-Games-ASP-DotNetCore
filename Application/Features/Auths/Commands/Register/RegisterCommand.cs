@@ -1,6 +1,6 @@
 ﻿using Application.Features.Auths.Dtos;
 using Application.Features.Auths.Rules;
-using Application.Services.AuthService;
+using Application.Services.AuthServices;
 using Application.Services.Repositories;
 using Application.Services.UserService;
 using Core.Security.Hashing;

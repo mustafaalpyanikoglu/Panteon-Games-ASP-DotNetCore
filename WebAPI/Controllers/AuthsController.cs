@@ -4,7 +4,7 @@ using Application.Features.Auths.Commands.RefleshToken;
 using Application.Features.Auths.Commands.Register;
 using Application.Features.Auths.Commands.RevokeToken;
 using Application.Features.Auths.Dtos;
-using Application.Services.AuthService;
+using Application.Services.AuthServices;
 using Domain.Concrete;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;

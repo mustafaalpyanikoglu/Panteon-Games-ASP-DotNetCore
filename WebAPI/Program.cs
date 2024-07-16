@@ -6,6 +6,7 @@ using Microsoft.OpenApi.Models;
 using Application;
 using Persistence;
 using Core.Security;
+using Infrastructure;
 using Core.CrossCuttingConcerns.Exceptions;
 using WebAPI;
 
@@ -14,7 +15,16 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddApplicationServices();
 builder.Services.AddPersistenceServices(builder.Configuration);
+builder.Services.AddInfrastructureServices();
 builder.Services.AddSecurityServices();
+
+//builder.Services.AddDistributedMemoryCache();
+builder.Services.AddStackExchangeRedisCache(redisOptions =>
+{
+    redisOptions.Configuration = builder.Configuration.GetConnectionString("RedisLocalConnectionString");
+});
+
+builder.Services.AddCors(opt => opt.AddDefaultPolicy(p => { p.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader(); }));
 builder.Services.AddHttpContextAccessor();
 
 
