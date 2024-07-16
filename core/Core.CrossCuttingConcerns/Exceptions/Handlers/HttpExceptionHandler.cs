@@ -25,7 +25,7 @@ public class HttpExceptionHandler : ExceptionHandler
 
     public override Task HandleException(ValidationException validationException)
     {
-        Response.StatusCode = StatusCodes.Status400BadRequest;
+        Response.StatusCode = StatusCodes.Status422UnprocessableEntity;
         string details = new ValidationProblemDetails(validationException.Errors).ToJson();
         return Response.WriteAsync(details);
     }

@@ -1,12 +1,71 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E4F2306C-322F-4C7A-905D-01226CA5FA18}|Application\\Application.csproj|c:\\users\\malpy\\desktop\\panteon games\\panteon-games-asp-dotnetcore\\application\\features\\buildingconfigs\\queries\\getlistbuildingconfig\\getlistoperationclaimquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4F2306C-322F-4C7A-905D-01226CA5FA18}|Application\\Application.csproj|solutionrelative:application\\features\\buildingconfigs\\queries\\getlistbuildingconfig\\getlistoperationclaimquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C310B8EA-DF56-48F7-A270-0CEAF76C5994}|WebAPI\\WebAPI.csproj|c:\\users\\malpy\\desktop\\panteon games\\panteon-games-asp-dotnetcore\\webapi\\controllers\\buildingconfigscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C310B8EA-DF56-48F7-A270-0CEAF76C5994}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\buildingconfigscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C310B8EA-DF56-48F7-A270-0CEAF76C5994}|WebAPI\\WebAPI.csproj|c:\\users\\malpy\\desktop\\panteon games\\panteon-games-asp-dotnetcore\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C310B8EA-DF56-48F7-A270-0CEAF76C5994}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GetListOperationClaimQuery.cs",
+              "DocumentMoniker": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\Application\\Features\\BuildingConfigs\\Queries\\GetListBuildingConfig\\GetListOperationClaimQuery.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\BuildingConfigs\\Queries\\GetListBuildingConfig\\GetListOperationClaimQuery.cs",
+              "ToolTip": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\Application\\Features\\BuildingConfigs\\Queries\\GetListBuildingConfig\\GetListOperationClaimQuery.cs",
+              "RelativeToolTip": "Application\\Features\\BuildingConfigs\\Queries\\GetListBuildingConfig\\GetListOperationClaimQuery.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAABlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T14:22:31.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BuildingConfigsController.cs",
+              "DocumentMoniker": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\WebAPI\\Controllers\\BuildingConfigsController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\BuildingConfigsController.cs",
+              "ToolTip": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\WebAPI\\Controllers\\BuildingConfigsController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\BuildingConfigsController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowCcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T14:20:51.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\WebAPI\\Program.cs",
+              "RelativeToolTip": "WebAPI\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T14:18:30.115Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

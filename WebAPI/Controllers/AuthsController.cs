@@ -67,7 +67,7 @@ public class AuthsController : BaseController
         return Ok(result);
     }
 
-    [HttpPost("changepassword")]
+    [HttpPost("ChangePassword")]
     public async Task<IActionResult> Add([FromBody] ChangePasswordCommand changePasswordCommand)
     {
         UserForChangePasswordDto result = await Mediator.Send(changePasswordCommand);

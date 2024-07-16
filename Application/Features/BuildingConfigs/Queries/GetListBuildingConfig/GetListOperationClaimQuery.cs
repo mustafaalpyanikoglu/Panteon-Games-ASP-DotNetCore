@@ -9,7 +9,7 @@ using NArchitecture.Core.Application.Pipelines.Caching;
 
 namespace Application.Features.BuildingConfigs.Queries.GetListBuildingConfig;
 
-public class GetListBuildingConfigQuery : IRequest<List<BuildingConfigListDto>>, ICachableRequest/*, ISecuredRequest*/
+public class GetListBuildingConfigQuery : IRequest<List<BuildingConfigListDto>>/*, ICachableRequest*//*, ISecuredRequest*/
 {
     public bool BypassCache { get; set; }
     public string CacheKey => $"GetListBuildingConfigQuery";

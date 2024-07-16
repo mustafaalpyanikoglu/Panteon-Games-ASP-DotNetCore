@@ -13,11 +13,6 @@ using WebAPI;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-builder.Services.AddHttpContextAccessor();
-
-
 builder.Services.AddApplicationServices();
 builder.Services.AddPersistenceServices(builder.Configuration);
 builder.Services.AddInfrastructureServices();
@@ -30,6 +25,7 @@ builder.Services.AddStackExchangeRedisCache(redisOptions =>
 });
 
 builder.Services.AddCors(opt => opt.AddDefaultPolicy(p => { p.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader(); }));
+builder.Services.AddHttpContextAccessor();
 
 
 TokenOptions? tokenOptions = builder.Configuration.GetSection("TokenOptions").Get<TokenOptions>();
@@ -46,6 +42,20 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
         ClockSkew = TimeSpan.Zero,
         IssuerSigningKey = SecurityKeyHelper.CreateSecurityKey(tokenOptions?.SecurityKey ?? "")
     };
+});
+
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddCors(opt =>
+{
+    opt.AddPolicy("panteonGamesPolicy", policy =>
+    {
+        policy
+            .WithOrigins("http://localhost:3000")
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            .AllowCredentials();
+    });
 });
 
 builder.Services.AddSwaggerGen(opt =>
@@ -81,23 +91,15 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-if (app.Environment.IsProduction())
+//if (app.Environment.IsProduction())
     app.ConfigureCustomExceptionMiddleware();
-
-
-app.UseCors(
-    opt =>
-        opt.WithOrigins(app.Configuration.GetSection("WebAPIConfiguration").Get<WebAPIConfiguration>().AllowedOrigins)
-            .AllowAnyHeader()
-            .AllowAnyMethod()
-            .AllowCredentials()
-);
 
 app.UseAuthentication();
 app.UseAuthorization();
 
 app.UseHttpsRedirection();
-
+app.UseCors("panteonGamesPolicy");
 app.MapControllers();
+
 
 app.Run();
