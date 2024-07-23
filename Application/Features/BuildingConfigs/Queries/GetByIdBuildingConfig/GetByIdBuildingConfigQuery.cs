@@ -10,10 +10,10 @@ using static Core.Security.Constants.GeneralOperationClaims;
 
 namespace Application.Features.BuildingConfigs.Queries.GetByIdBuildingConfig;
 
-public class GetByIdBuildingConfigQuery : IRequest<BuildingConfigDto>/*, ISecuredRequest*/
+public class GetByIdBuildingConfigQuery : IRequest<BuildingConfigDto>, ISecuredRequest
 {
     public string Id { get; set; }
-    //public string[] Roles => new[] {ADMIN, GAMER, VIP };
+    public string[] Roles => new[] { ADMIN, GAMER, VIP };
 
     public class GetByIdBuildingConfigQueryHandler : IRequestHandler<GetByIdBuildingConfigQuery, BuildingConfigDto>
     {

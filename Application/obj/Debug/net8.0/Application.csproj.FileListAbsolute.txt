@@ -22,3 +22,51 @@ C:\Users\malpy\Desktop\panteon games\Panteon-Games-ASP-DotNetCore\Application\ob
 C:\Users\malpy\Desktop\panteon games\Panteon-Games-ASP-DotNetCore\Application\obj\Debug\net8.0\refint\Application.dll
 C:\Users\malpy\Desktop\panteon games\Panteon-Games-ASP-DotNetCore\Application\obj\Debug\net8.0\Application.pdb
 C:\Users\malpy\Desktop\panteon games\Panteon-Games-ASP-DotNetCore\Application\obj\Debug\net8.0\ref\Application.dll
+C:\Users\malpy\Desktop\Panteon-Games-ASP-DotNetCore\Application\bin\Debug\net8.0\Application.deps.json
+C:\Users\malpy\Desktop\Panteon-Games-ASP-DotNetCore\Application\bin\Debug\net8.0\Application.dll
+C:\Users\malpy\Desktop\Panteon-Games-ASP-DotNetCore\Application\bin\Debug\net8.0\Application.pdb
+C:\Users\malpy\Desktop\Panteon-Games-ASP-DotNetCore\Application\bin\Debug\net8.0\Core.Application.dll
+C:\Users\malpy\Desktop\Panteon-Games-ASP-DotNetCore\Application\bin\Debug\net8.0\Core.CrossCuttingConcerns.dll
+C:\Users\malpy\Desktop\Panteon-Games-ASP-DotNetCore\Application\bin\Debug\net8.0\Core.Persistence.dll
+C:\Users\malpy\Desktop\Panteon-Games-ASP-DotNetCore\Application\bin\Debug\net8.0\Core.Security.dll
+C:\Users\malpy\Desktop\Panteon-Games-ASP-DotNetCore\Application\bin\Debug\net8.0\Domain.dll
+C:\Users\malpy\Desktop\Panteon-Games-ASP-DotNetCore\Application\bin\Debug\net8.0\Core.Application.pdb
+C:\Users\malpy\Desktop\Panteon-Games-ASP-DotNetCore\Application\bin\Debug\net8.0\Core.CrossCuttingConcerns.pdb
+C:\Users\malpy\Desktop\Panteon-Games-ASP-DotNetCore\Application\bin\Debug\net8.0\Core.Security.pdb
+C:\Users\malpy\Desktop\Panteon-Games-ASP-DotNetCore\Application\bin\Debug\net8.0\Domain.pdb
+C:\Users\malpy\Desktop\Panteon-Games-ASP-DotNetCore\Application\bin\Debug\net8.0\Core.Persistence.pdb
+C:\Users\malpy\Desktop\Panteon-Games-ASP-DotNetCore\Application\obj\Debug\net8.0\Application.csproj.AssemblyReference.cache
+C:\Users\malpy\Desktop\Panteon-Games-ASP-DotNetCore\Application\obj\Debug\net8.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\malpy\Desktop\Panteon-Games-ASP-DotNetCore\Application\obj\Debug\net8.0\Application.AssemblyInfoInputs.cache
+C:\Users\malpy\Desktop\Panteon-Games-ASP-DotNetCore\Application\obj\Debug\net8.0\Application.AssemblyInfo.cs
+C:\Users\malpy\Desktop\Panteon-Games-ASP-DotNetCore\Application\obj\Debug\net8.0\Application.csproj.CoreCompileInputs.cache
+C:\Users\malpy\Desktop\Panteon-Games-ASP-DotNetCore\Application\obj\Debug\net8.0\Application.sourcelink.json
+C:\Users\malpy\Desktop\Panteon-Games-ASP-DotNetCore\Application\obj\Debug\net8.0\Applicat.44B5EDA2.Up2Date
+C:\Users\malpy\Desktop\Panteon-Games-ASP-DotNetCore\Application\obj\Debug\net8.0\Application.dll
+C:\Users\malpy\Desktop\Panteon-Games-ASP-DotNetCore\Application\obj\Debug\net8.0\refint\Application.dll
+C:\Users\malpy\Desktop\Panteon-Games-ASP-DotNetCore\Application\obj\Debug\net8.0\Application.pdb
+C:\Users\malpy\Desktop\Panteon-Games-ASP-DotNetCore\Application\obj\Debug\net8.0\ref\Application.dll
+C:\Users\malpy\Desktop\Yeni klasör\Panteon-Games-ASP-DotNetCore\Application\bin\Debug\net8.0\Application.deps.json
+C:\Users\malpy\Desktop\Yeni klasör\Panteon-Games-ASP-DotNetCore\Application\bin\Debug\net8.0\Application.dll
+C:\Users\malpy\Desktop\Yeni klasör\Panteon-Games-ASP-DotNetCore\Application\bin\Debug\net8.0\Application.pdb
+C:\Users\malpy\Desktop\Yeni klasör\Panteon-Games-ASP-DotNetCore\Application\bin\Debug\net8.0\Core.Application.dll
+C:\Users\malpy\Desktop\Yeni klasör\Panteon-Games-ASP-DotNetCore\Application\bin\Debug\net8.0\Core.CrossCuttingConcerns.dll
+C:\Users\malpy\Desktop\Yeni klasör\Panteon-Games-ASP-DotNetCore\Application\bin\Debug\net8.0\Core.Persistence.dll
+C:\Users\malpy\Desktop\Yeni klasör\Panteon-Games-ASP-DotNetCore\Application\bin\Debug\net8.0\Core.Security.dll
+C:\Users\malpy\Desktop\Yeni klasör\Panteon-Games-ASP-DotNetCore\Application\bin\Debug\net8.0\Domain.dll
+C:\Users\malpy\Desktop\Yeni klasör\Panteon-Games-ASP-DotNetCore\Application\bin\Debug\net8.0\Core.Application.pdb
+C:\Users\malpy\Desktop\Yeni klasör\Panteon-Games-ASP-DotNetCore\Application\bin\Debug\net8.0\Core.CrossCuttingConcerns.pdb
+C:\Users\malpy\Desktop\Yeni klasör\Panteon-Games-ASP-DotNetCore\Application\bin\Debug\net8.0\Core.Security.pdb
+C:\Users\malpy\Desktop\Yeni klasör\Panteon-Games-ASP-DotNetCore\Application\bin\Debug\net8.0\Domain.pdb
+C:\Users\malpy\Desktop\Yeni klasör\Panteon-Games-ASP-DotNetCore\Application\bin\Debug\net8.0\Core.Persistence.pdb
+C:\Users\malpy\Desktop\Yeni klasör\Panteon-Games-ASP-DotNetCore\Application\obj\Debug\net8.0\Application.csproj.AssemblyReference.cache
+C:\Users\malpy\Desktop\Yeni klasör\Panteon-Games-ASP-DotNetCore\Application\obj\Debug\net8.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\malpy\Desktop\Yeni klasör\Panteon-Games-ASP-DotNetCore\Application\obj\Debug\net8.0\Application.AssemblyInfoInputs.cache
+C:\Users\malpy\Desktop\Yeni klasör\Panteon-Games-ASP-DotNetCore\Application\obj\Debug\net8.0\Application.AssemblyInfo.cs
+C:\Users\malpy\Desktop\Yeni klasör\Panteon-Games-ASP-DotNetCore\Application\obj\Debug\net8.0\Application.csproj.CoreCompileInputs.cache
+C:\Users\malpy\Desktop\Yeni klasör\Panteon-Games-ASP-DotNetCore\Application\obj\Debug\net8.0\Application.sourcelink.json
+C:\Users\malpy\Desktop\Yeni klasör\Panteon-Games-ASP-DotNetCore\Application\obj\Debug\net8.0\Applicat.44B5EDA2.Up2Date
+C:\Users\malpy\Desktop\Yeni klasör\Panteon-Games-ASP-DotNetCore\Application\obj\Debug\net8.0\Application.dll
+C:\Users\malpy\Desktop\Yeni klasör\Panteon-Games-ASP-DotNetCore\Application\obj\Debug\net8.0\refint\Application.dll
+C:\Users\malpy\Desktop\Yeni klasör\Panteon-Games-ASP-DotNetCore\Application\obj\Debug\net8.0\Application.pdb
+C:\Users\malpy\Desktop\Yeni klasör\Panteon-Games-ASP-DotNetCore\Application\obj\Debug\net8.0\ref\Application.dll

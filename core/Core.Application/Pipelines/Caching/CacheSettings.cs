@@ -1,6 +1,6 @@
-﻿namespace NArchitecture.Core.Application.Pipelines.Caching;
+﻿namespace Core.Application.Pipelines.Caching;
 
 public class CacheSettings
 {
-    public int SlidingExpiration { get; set; }
+    public int SlidingExpiration { get; set; } = 300;
 }

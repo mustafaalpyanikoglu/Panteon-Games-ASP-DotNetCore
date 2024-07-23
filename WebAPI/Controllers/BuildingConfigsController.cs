@@ -13,21 +13,21 @@ namespace WebAPI.Controllers;
 public class BuildingConfigsController : BaseController
 {
     [HttpPost("add")]
-    public async Task<IActionResult> Add([FromForm] CreateBuildingConfigCommand createBuildingConfigCommand)
+    public async Task<IActionResult> Add(CreateBuildingConfigCommand createBuildingConfigCommand)
     {
         CreatedBuildingConfigDto result = await Mediator.Send(createBuildingConfigCommand);
         return Created("", result);
     }
 
-    [HttpDelete("delete")]
-    public async Task<IActionResult> Delete([FromBody] DeleteBuildingConfigCommand deleteBuildingConfigCommand)
+    [HttpPost("delete")]
+    public async Task<IActionResult> Delete(DeleteBuildingConfigCommand deleteBuildingConfigCommand)
     {
         DeletedBuildingConfigDto result = await Mediator.Send(deleteBuildingConfigCommand);
         return Ok(result);
     }
 
-    [HttpPut("update")]
-    public async Task<IActionResult> Update([FromBody] UpdateBuildingConfigCommand updateBuildingConfigCommand)
+    [HttpPost("update")]
+    public async Task<IActionResult> Update(UpdateBuildingConfigCommand updateBuildingConfigCommand)
     {
         UpdatedBuildingConfigDto result = await Mediator.Send(updateBuildingConfigCommand);
         return Ok(result);

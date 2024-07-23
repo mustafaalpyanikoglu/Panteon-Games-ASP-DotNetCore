@@ -5,5 +5,5 @@ namespace Application.Features.BuildingConfigs.Dtos;
 
 public class DeletedBuildingConfigDto : IDto
 {
-    public ObjectId Id { get; set; }
+    public string Id { get; set; }
 }

@@ -10,11 +10,11 @@ using Application.Features.BuildingConfigs.Rules;
 
 namespace Application.Features.BuildingConfigs.Commands.DeleteBuildingConfig;
 
-public class DeleteBuildingConfigCommand : IRequest<DeletedBuildingConfigDto>/*, ISecuredRequest*/
+public class DeleteBuildingConfigCommand : IRequest<DeletedBuildingConfigDto>, ISecuredRequest
 {
     public string Id { get; set; }
 
-    //public string[] Roles => new[] { ADMIN, GAMER, VIP };
+    public string[] Roles => new[] { ADMIN, GAMER, VIP };
 
     public class DeleteBuildingConfigCommandHandler : IRequestHandler<DeleteBuildingConfigCommand, DeletedBuildingConfigDto>
     {

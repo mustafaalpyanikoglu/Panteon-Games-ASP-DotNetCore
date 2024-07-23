@@ -5,18 +5,18 @@ using MediatR;
 using static Core.Security.Constants.GeneralOperationClaims;
 using Application.Services.Repositories;
 using Application.Features.BuildingConfigs.Dtos;
-using NArchitecture.Core.Application.Pipelines.Caching;
+using Domain.Constants;
 
 namespace Application.Features.BuildingConfigs.Queries.GetListBuildingConfig;
 
-public class GetListBuildingConfigQuery : IRequest<List<BuildingConfigListDto>>/*, ICachableRequest*//*, ISecuredRequest*/
+public class GetListBuildingConfigQuery : IRequest<List<BuildingConfigListDto>>/*, ICachableRequest*/, ISecuredRequest
 {
-    public bool BypassCache { get; set; }
-    public string CacheKey => $"GetListBuildingConfigQuery";
-    public string CacheGroupKey => "GetBuildingConfig";
-    public TimeSpan? SlidingExpiration { get; set; }
+    //public bool BypassCache { get; set; }
+    //public string CacheKey => $"GetListBuildingConfigQuery";
+    //public string CacheGroupKey => "GetBuildingConfig";
+    //public TimeSpan? SlidingExpiration { get; set; }
 
-    //public string[] Roles => new[] { ADMIN, GAMER, VIP };
+    public string[] Roles => new[] { ADMIN, GAMER, VIP };
 
     public class GetListBuildingConfigQueryHanlder : IRequestHandler<GetListBuildingConfigQuery, List<BuildingConfigListDto>>
     {

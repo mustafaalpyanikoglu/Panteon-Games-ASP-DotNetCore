@@ -24,13 +24,13 @@ namespace WebAPI.Controllers
             CreatedUserDto result = await Mediator.Send(createUserCommand);
             return Created("", result);
         }
-        [HttpDelete("delete")]
+        [HttpPost("delete")]
         public async Task<IActionResult> Delete([FromBody] DeleteUserCommand deleteUserCommand)
         {
             DeletedUserDto result = await Mediator.Send(deleteUserCommand);
             return Ok(result);
         }
-        [HttpPut("update")]
+        [HttpPost("update")]
         public async Task<IActionResult> Update([FromBody] UpdateUserCommand updateUserCommand)
         {
             UpdatedUserDto result = await Mediator.Send(updateUserCommand);
@@ -43,7 +43,7 @@ namespace WebAPI.Controllers
             UserListModel result = await Mediator.Send(getListUserQuery);
             return Ok(result);
         }
-        [HttpPut("fromauth")]
+        [HttpPost("fromauth")]
         public async Task<IActionResult> UpdateFromAuth([FromBody] UpdateUserFromAuthCommand updateUserFromAuthCommand)
         {
             UpdatedUserFromAuthDto result = await Mediator.Send(updateUserFromAuthCommand);

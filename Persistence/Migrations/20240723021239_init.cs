@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Persistence.Migrations
 {
     /// <inheritdoc />
-    public partial class init_database : Migration
+    public partial class init : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -33,7 +33,7 @@ namespace Persistence.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    UserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Username = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
                     Email = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
                     PasswordHash = table.Column<byte[]>(type: "varbinary(500)", nullable: false),
                     PasswordSalt = table.Column<byte[]>(type: "varbinary(500)", nullable: false),
@@ -104,7 +104,8 @@ namespace Persistence.Migrations
                 values: new object[,]
                 {
                     { 1, "Bütün işlemleri yapabilir.", "admin" },
-                    { 2, "Alışveriş yapan müşteri", "customer" }
+                    { 2, "Standart Oyuncu", "gamer" },
+                    { 3, "VIP Oyuncu", "vip" }
                 });
 
             migrationBuilder.CreateIndex(

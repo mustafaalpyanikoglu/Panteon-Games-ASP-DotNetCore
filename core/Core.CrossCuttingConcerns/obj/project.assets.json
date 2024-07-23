@@ -3460,11 +3460,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\core\\Core.CrossCuttingConcerns\\Core.CrossCuttingConcerns.csproj",
+      "projectUniqueName": "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\core\\Core.CrossCuttingConcerns\\Core.CrossCuttingConcerns.csproj",
       "projectName": "Core.CrossCuttingConcerns",
-      "projectPath": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\core\\Core.CrossCuttingConcerns\\Core.CrossCuttingConcerns.csproj",
+      "projectPath": "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\core\\Core.CrossCuttingConcerns\\Core.CrossCuttingConcerns.csproj",
       "packagesPath": "C:\\Users\\malpy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\core\\Core.CrossCuttingConcerns\\obj\\",
+      "outputPath": "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\core\\Core.CrossCuttingConcerns\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\malpy\\AppData\\Roaming\\NuGet\\NuGet.Config",

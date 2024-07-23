@@ -57,8 +57,14 @@ namespace Persistence.Migrations
                         new
                         {
                             Id = 2,
-                            Description = "Alışveriş yapan müşteri",
-                            Name = "customer"
+                            Description = "Standart Oyuncu",
+                            Name = "gamer"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Description = "VIP Oyuncu",
+                            Name = "vip"
                         });
                 });
 
