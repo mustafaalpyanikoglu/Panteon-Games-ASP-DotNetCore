@@ -2,12 +2,12 @@
 using Application.Services.UserService;
 using Application.Services.UserServices;
 using Core.Application.Pipelines.Authorization;
+using Core.Application.Pipelines.Caching;
 using Core.Application.Pipelines.Validation;
 using Core.Application.Rules;
 using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
-using NArchitecture.Core.Application.Pipelines.Caching;
 using System.Reflection;
 
 namespace Application;

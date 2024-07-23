@@ -12,8 +12,8 @@ using Persistence.Contexts;
 namespace Persistence.Migrations
 {
     [DbContext(typeof(SqlContext))]
-    [Migration("20240714120042_migration2")]
-    partial class migration2
+    [Migration("20240723021239_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -60,8 +60,14 @@ namespace Persistence.Migrations
                         new
                         {
                             Id = 2,
-                            Description = "Alışveriş yapan müşteri",
-                            Name = "customer"
+                            Description = "Standart Oyuncu",
+                            Name = "gamer"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Description = "VIP Oyuncu",
+                            Name = "vip"
                         });
                 });
 

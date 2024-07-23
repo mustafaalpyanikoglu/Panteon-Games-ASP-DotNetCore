@@ -23,13 +23,13 @@ public class UserOperationClaimController : BaseController
         CreateUserOperationClaimDto result = await Mediator.Send(createUserOperationClaimCommand);
         return Created("", result);
     }
-    [HttpDelete("delete")]
+    [HttpPost("delete")]
     public async Task<IActionResult> Delete([FromBody] DeleteUserOperationClaimCommand deleteUserOperationClaimCommand)
     {
         DeleteUserOperationClaimDto result = await Mediator.Send(deleteUserOperationClaimCommand);
         return Ok(result);
     }
-    [HttpPut("update")]
+    [HttpPost("update")]
     public async Task<IActionResult> Update([FromBody] UpdateUserOperationClaimCommand updateUserOperationClaimCommand)
     {
         UpdateUserOperationClaimDto result = await Mediator.Send(updateUserOperationClaimCommand);

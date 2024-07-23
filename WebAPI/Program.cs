@@ -8,7 +8,6 @@ using Persistence;
 using Core.Security;
 using Infrastructure;
 using Core.CrossCuttingConcerns.Exceptions;
-using WebAPI;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,10 +18,10 @@ builder.Services.AddInfrastructureServices();
 builder.Services.AddSecurityServices();
 
 //builder.Services.AddDistributedMemoryCache();
-builder.Services.AddStackExchangeRedisCache(redisOptions =>
-{
-    redisOptions.Configuration = builder.Configuration.GetConnectionString("RedisLocalConnectionString");
-});
+//builder.Services.AddStackExchangeRedisCache(redisOptions =>
+//{
+//    redisOptions.Configuration = builder.Configuration.GetConnectionString("RedisLocalConnectionString");
+//});
 
 builder.Services.AddCors(opt => opt.AddDefaultPolicy(p => { p.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader(); }));
 builder.Services.AddHttpContextAccessor();
@@ -51,7 +50,7 @@ builder.Services.AddCors(opt =>
     opt.AddPolicy("panteonGamesPolicy", policy =>
     {
         policy
-            .WithOrigins("http://localhost:3000")
+            .WithOrigins("http://localhost:3000", "http://localhost:3001")
             .AllowAnyMethod()
             .AllowAnyHeader()
             .AllowCredentials();
