@@ -53,7 +53,7 @@ public class AuthsController : BaseController
     }
 
 
-    [HttpPut("RevokeToken")]
+    [HttpPost("RevokeToken")]
     public async Task<IActionResult> RevokeToken(
     [FromBody(EmptyBodyBehavior = EmptyBodyBehavior.Allow)]
     string? refreshToken)

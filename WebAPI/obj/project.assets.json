@@ -11195,11 +11195,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\WebAPI\\WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\WebAPI\\WebAPI.csproj",
       "projectName": "WebAPI",
-      "projectPath": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\WebAPI\\WebAPI.csproj",
+      "projectPath": "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\WebAPI\\WebAPI.csproj",
       "packagesPath": "C:\\Users\\malpy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\WebAPI\\obj\\",
+      "outputPath": "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\malpy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -11217,17 +11217,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\Application\\Application.csproj": {
-              "projectPath": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\Application\\Application.csproj"
+            "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\Application\\Application.csproj"
             },
-            "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\core\\Core.Security\\Core.Security.csproj": {
-              "projectPath": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\core\\Core.Security\\Core.Security.csproj"
+            "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\core\\Core.Security\\Core.Security.csproj": {
+              "projectPath": "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\core\\Core.Security\\Core.Security.csproj"
             },
-            "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\Infrastructure\\Infrastructure.csproj"
             },
-            "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\Persistence\\Persistence.csproj": {
-              "projectPath": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\Persistence\\Persistence.csproj"
+            "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\Persistence\\Persistence.csproj": {
+              "projectPath": "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\Persistence\\Persistence.csproj"
             }
           }
         }

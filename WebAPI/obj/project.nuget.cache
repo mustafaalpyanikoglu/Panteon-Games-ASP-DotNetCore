@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "L5CQ4n60nTs=",
+  "dgSpecHash": "uujlRIOYCMQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\WebAPI\\WebAPI.csproj",
+  "projectFilePath": "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\malpy\\.nuget\\packages\\autofac\\8.0.0\\autofac.8.0.0.nupkg.sha512",
     "C:\\Users\\malpy\\.nuget\\packages\\autofac.extensions.dependencyinjection\\8.0.0\\autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",

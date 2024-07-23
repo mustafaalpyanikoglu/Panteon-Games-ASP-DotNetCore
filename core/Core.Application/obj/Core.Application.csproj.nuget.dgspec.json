@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\core\\Core.Application\\Core.Application.csproj": {}
+    "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\core\\Core.Application\\Core.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\core\\Core.Application\\Core.Application.csproj": {
+    "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\core\\Core.Application\\Core.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\core\\Core.Application\\Core.Application.csproj",
+        "projectUniqueName": "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\core\\Core.Application\\Core.Application.csproj",
         "projectName": "Core.Application",
-        "projectPath": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\core\\Core.Application\\Core.Application.csproj",
+        "projectPath": "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\core\\Core.Application\\Core.Application.csproj",
         "packagesPath": "C:\\Users\\malpy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\core\\Core.Application\\obj\\",
+        "outputPath": "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\core\\Core.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\malpy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,11 +29,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\core\\Core.CrossCuttingConcerns\\Core.CrossCuttingConcerns.csproj": {
-                "projectPath": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\core\\Core.CrossCuttingConcerns\\Core.CrossCuttingConcerns.csproj"
+              "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\core\\Core.CrossCuttingConcerns\\Core.CrossCuttingConcerns.csproj": {
+                "projectPath": "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\core\\Core.CrossCuttingConcerns\\Core.CrossCuttingConcerns.csproj"
               },
-              "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\core\\Core.Security\\Core.Security.csproj": {
-                "projectPath": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\core\\Core.Security\\Core.Security.csproj"
+              "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\core\\Core.Security\\Core.Security.csproj": {
+                "projectPath": "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\core\\Core.Security\\Core.Security.csproj"
               }
             }
           }
@@ -98,14 +98,14 @@
         }
       }
     },
-    "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\core\\Core.CrossCuttingConcerns\\Core.CrossCuttingConcerns.csproj": {
+    "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\core\\Core.CrossCuttingConcerns\\Core.CrossCuttingConcerns.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\core\\Core.CrossCuttingConcerns\\Core.CrossCuttingConcerns.csproj",
+        "projectUniqueName": "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\core\\Core.CrossCuttingConcerns\\Core.CrossCuttingConcerns.csproj",
         "projectName": "Core.CrossCuttingConcerns",
-        "projectPath": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\core\\Core.CrossCuttingConcerns\\Core.CrossCuttingConcerns.csproj",
+        "projectPath": "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\core\\Core.CrossCuttingConcerns\\Core.CrossCuttingConcerns.csproj",
         "packagesPath": "C:\\Users\\malpy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\core\\Core.CrossCuttingConcerns\\obj\\",
+        "outputPath": "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\core\\Core.CrossCuttingConcerns\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\malpy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -177,14 +177,14 @@
         }
       }
     },
-    "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\core\\Core.Persistence\\Core.Persistence.csproj": {
+    "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\core\\Core.Persistence\\Core.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\core\\Core.Persistence\\Core.Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\core\\Core.Persistence\\Core.Persistence.csproj",
         "projectName": "Core.Persistence",
-        "projectPath": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\core\\Core.Persistence\\Core.Persistence.csproj",
+        "projectPath": "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\core\\Core.Persistence\\Core.Persistence.csproj",
         "packagesPath": "C:\\Users\\malpy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\core\\Core.Persistence\\obj\\",
+        "outputPath": "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\core\\Core.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\malpy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -256,14 +256,14 @@
         }
       }
     },
-    "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\core\\Core.Security\\Core.Security.csproj": {
+    "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\core\\Core.Security\\Core.Security.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\core\\Core.Security\\Core.Security.csproj",
+        "projectUniqueName": "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\core\\Core.Security\\Core.Security.csproj",
         "projectName": "Core.Security",
-        "projectPath": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\core\\Core.Security\\Core.Security.csproj",
+        "projectPath": "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\core\\Core.Security\\Core.Security.csproj",
         "packagesPath": "C:\\Users\\malpy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\core\\Core.Security\\obj\\",
+        "outputPath": "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\core\\Core.Security\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\malpy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -281,8 +281,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\Domain\\Domain.csproj"
+              "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\Domain\\Domain.csproj"
               }
             }
           }
@@ -347,14 +347,14 @@
         }
       }
     },
-    "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\Domain\\Domain.csproj": {
+    "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\malpy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\malpy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -372,8 +372,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\core\\Core.Persistence\\Core.Persistence.csproj": {
-                "projectPath": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\core\\Core.Persistence\\Core.Persistence.csproj"
+              "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\core\\Core.Persistence\\Core.Persistence.csproj": {
+                "projectPath": "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\core\\Core.Persistence\\Core.Persistence.csproj"
               }
             }
           }

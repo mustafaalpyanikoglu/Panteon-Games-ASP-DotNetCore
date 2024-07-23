@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RVqAYpw64BI=",
+  "dgSpecHash": "obGY6hWKbnQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\core\\Core.Security\\Core.Security.csproj",
+  "projectFilePath": "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\core\\Core.Security\\Core.Security.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\malpy\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\malpy\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wfDZ2R/kJVc=",
+  "dgSpecHash": "kEPt+sazcAk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\malpy\\Desktop\\panteon games\\Panteon-Games-ASP-DotNetCore\\core\\Core.CrossCuttingConcerns\\Core.CrossCuttingConcerns.csproj",
+  "projectFilePath": "C:\\Users\\malpy\\Desktop\\Yeni klasör\\Panteon-Games-ASP-DotNetCore\\core\\Core.CrossCuttingConcerns\\Core.CrossCuttingConcerns.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\malpy\\.nuget\\packages\\fluentvalidation\\11.9.2\\fluentvalidation.11.9.2.nupkg.sha512",
     "C:\\Users\\malpy\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

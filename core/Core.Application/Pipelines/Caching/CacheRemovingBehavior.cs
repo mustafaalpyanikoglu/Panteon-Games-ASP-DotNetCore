@@ -4,7 +4,7 @@ using MediatR;
 using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Logging;
 
-namespace NArchitecture.Core.Application.Pipelines.Caching;
+namespace Core.Application.Pipelines.Caching;
 
 public class CacheRemovingBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
     where TRequest : IRequest<TResponse>, ICacheRemoverRequest

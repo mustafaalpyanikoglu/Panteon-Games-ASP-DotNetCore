@@ -32,7 +32,6 @@ public static class PersistenceServiceRegistration
         services.AddScoped<IRefreshTokenRepository, RefreshTokenRepository>();
         services.AddScoped<IWeatherForecastRepository, WeatherForecastRepository>();
         services.AddScoped<IBuildingConfigRepository, BuildingConfigRepository>();
-        services.AddScoped<IBuildingUpgradeRepository, BuildingUpgradeRepository>();
         services.AddScoped<IUserBuildingRepository, UserBuildingRepository>();
 
 
