@@ -1,20 +1,19 @@
 ﻿using AutoMapper;
 using Core.Application.Pipelines.Authorization;
-using Core.Application.Requests;
 using MediatR;
-using static Core.Security.Constants.GeneralOperationClaims;
 using Application.Services.Repositories;
 using Application.Features.BuildingConfigs.Dtos;
-using Domain.Constants;
+using static Core.Security.Constants.GeneralOperationClaims;
+using Core.Application.Pipelines.Caching;
 
 namespace Application.Features.BuildingConfigs.Queries.GetListBuildingConfig;
 
-public class GetListBuildingConfigQuery : IRequest<List<BuildingConfigListDto>>/*, ICachableRequest*/, ISecuredRequest
+public class GetListBuildingConfigQuery : IRequest<List<BuildingConfigListDto>>, ICachableRequest, ISecuredRequest
 {
-    //public bool BypassCache { get; set; }
-    //public string CacheKey => $"GetListBuildingConfigQuery";
-    //public string CacheGroupKey => "GetBuildingConfig";
-    //public TimeSpan? SlidingExpiration { get; set; }
+    public bool BypassCache { get; set; }
+    public string CacheKey => $"GetListBuildingConfigQuery";
+    public string CacheGroupKey => "BuildingConfigList";
+    public TimeSpan? SlidingExpiration { get; set; }
 
     public string[] Roles => new[] { ADMIN, GAMER, VIP };
 

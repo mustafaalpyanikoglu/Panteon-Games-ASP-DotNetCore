@@ -12,4 +12,6 @@ public static class BuildingConfigMessages
     public const string BuildingCostMustBeGreaterThanZero = "Building cost must be greater than zero.";
     public const string ConstructionTimeMustBeBetween30And1800Seconds = "Construction time must be between 30 and 1800 seconds.";
     public const string BuildingTypeMustBeAValidEnumValue = "Building type must be a valid enum value.";
+    public const string BuildingTypeAlreadyAdded = "This type has already been added and should not be visible in the combobox.";
+
 }

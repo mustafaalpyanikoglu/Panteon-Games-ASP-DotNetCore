@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Core.Persistence.Paging;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Query;
 using Microsoft.Extensions.Options;
 using MongoDB.Bson;
 using MongoDB.Driver;
@@ -30,6 +32,38 @@ public abstract class MongoDbRepositoryBase<T> : IMongoDbRepository<T, string>
     public virtual Task<T> GetAsync(Expression<Func<T, bool>> predicate)
     {
         return Collection.Find(predicate).FirstOrDefaultAsync();
+    }
+
+    public virtual async Task<IPaginate<T>> GetListAsync(
+            Expression<Func<T, bool>>? predicate = null,
+            int index = 0,
+            int size = 10,
+            CancellationToken cancellationToken = default)
+    {
+        // Create the MongoDB filter
+        var filter = predicate == null ? Builders<T>.Filter.Empty : Builders<T>.Filter.Where(predicate);
+
+        // Retrieve the total count of matching documents
+        var count = await Collection.CountDocumentsAsync(filter, cancellationToken: cancellationToken);
+
+        // Retrieve the paginated results
+        var items = await Collection.Find(filter)
+            .Skip(index * size)
+            .Limit(size)
+            .ToListAsync(cancellationToken);
+
+        // Construct the paginated result
+        var paginatedList = new Paginate<T>
+        {
+            Index = index,
+            Size = size,
+            From = index * size,
+            Count = (int)count,
+            Items = items,
+            Pages = (int)Math.Ceiling(count / (double)size)
+        };
+
+        return paginatedList;
     }
 
     public virtual async Task<(IEnumerable<T> Items, long TotalCount)> ListAsync(

@@ -2,7 +2,9 @@
 using Application.Features.BuildingConfigs.Commands.CreateBuildingConfig;
 using Application.Features.BuildingConfigs.Commands.DeleteBuildingConfig;
 using Application.Features.BuildingConfigs.Dtos;
+using Application.Features.UserOperationClaims.Models;
 using AutoMapper;
+using Core.Persistence.Paging;
 using Domain.Concrete;
 
 namespace Business.Features.BuildingConfigs.Profiles;
@@ -23,5 +25,10 @@ public class MappingProfile : Profile
         CreateMap<BuildingConfig, BuildingConfigListDto>()
             .ForMember(x => x.Id, opt => opt.MapFrom(src => src.Id)) 
             .ReverseMap();
+        CreateMap<IPaginate<BuildingConfig>, BuildingConfigListModel>().ReverseMap();
+        CreateMap<BuildingConfig, BuildingTypeDto>()
+            .ForMember(dest => dest.BuildingType, opt => opt.MapFrom(src => src.BuildingType))
+            .ReverseMap();
+
     }
 }

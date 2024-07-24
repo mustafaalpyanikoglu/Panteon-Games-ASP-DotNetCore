@@ -6,14 +6,22 @@ using Application.Features.BuildingConfigs.Dtos;
 using Application.Services.Repositories;
 using Application.Features.BuildingConfigs.Rules;
 using static Core.Security.Constants.GeneralOperationClaims;
+using Core.Application.Pipelines.Caching;
 
 
 namespace Application.Features.BuildingConfigs.Queries.GetByIdBuildingConfig;
 
-public class GetByIdBuildingConfigQuery : IRequest<BuildingConfigDto>, ISecuredRequest
+public class GetByIdBuildingConfigQuery : IRequest<BuildingConfigDto>, ICachableRequest, ISecuredRequest
 {
     public string Id { get; set; }
+
     public string[] Roles => new[] { ADMIN, GAMER, VIP };
+
+    public bool BypassCache { get; set; }
+    public string CacheKey => $"GetByIdBuildingConfigQuery_{Id}";
+    public string CacheGroupKey => "BuildingConfigById";
+    public TimeSpan? SlidingExpiration { get; set; }
+
 
     public class GetByIdBuildingConfigQueryHandler : IRequestHandler<GetByIdBuildingConfigQuery, BuildingConfigDto>
     {
