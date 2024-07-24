@@ -11,18 +11,18 @@ using static Core.Security.Constants.GeneralOperationClaims;
 
 namespace Application.Features.BuildingConfigs.Commands.CreateBuildingConfig;
 
-public class CreateBuildingConfigCommand : IRequest<CreatedBuildingConfigDto>/*, ICacheRemoverRequest*/, ISecuredRequest
+public class CreateBuildingConfigCommand : IRequest<CreatedBuildingConfigDto>, ICacheRemoverRequest, ISecuredRequest
 {
     public BuildingTypeEnum BuildingType { get; set; }
     public int BuildingCost { get; set; }
     public int ConstructionTime { get; set; }
 
-    //public bool BypassCache { get; set; }
-    //public string CacheKey => $"GetListBuildingConfigQuery";
-    //public string CacheGroupKey => "GetBuildingConfig";
-    //public TimeSpan? SlidingExpiration { get; set; }
+    public bool BypassCache { get; set; }
+    public string CacheKey => $"GetListBuildingConfigQuery";
+    public string CacheGroupKey => "GetBuildingConfig";
+    public TimeSpan? SlidingExpiration { get; set; }
 
-    //string[]? ICacheRemoverRequest.CacheGroupKey => ["GetBuildingConfig"];
+    string[]? ICacheRemoverRequest.CacheGroupKey => ["BuildingTypeList", "BuildingConfigById", "BuildingConfigList", "BuildingConfigListWithPagination"];
 
 
     public string[] Roles => new[] { ADMIN, GAMER, VIP };
@@ -39,6 +39,8 @@ public class CreateBuildingConfigCommand : IRequest<CreatedBuildingConfigDto>/*,
 
         public async Task<CreatedBuildingConfigDto> Handle(CreateBuildingConfigCommand request, CancellationToken cancellationToken)
         {
+            await _buildingConfigBusinessRules.EnsureBuildingTypeNotVisibleInCombobox(request.BuildingType);
+
             var mappedBuildingConfig = _mapper.Map<BuildingConfig>(request);
             var createdBuildingConfig = await _buildingConfigRepository.AddAsync(mappedBuildingConfig);
             var createBuildingConfigDto = _mapper.Map<CreatedBuildingConfigDto>(createdBuildingConfig);

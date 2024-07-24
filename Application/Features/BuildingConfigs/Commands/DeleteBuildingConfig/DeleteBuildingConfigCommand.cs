@@ -6,15 +6,23 @@ using Application.Services.Repositories;
 using Domain.Concrete;
 using Application.Features.BuildingConfigs.Dtos;
 using Application.Features.BuildingConfigs.Rules;
+using Core.Application.Pipelines.Caching;
 
 
 namespace Application.Features.BuildingConfigs.Commands.DeleteBuildingConfig;
 
-public class DeleteBuildingConfigCommand : IRequest<DeletedBuildingConfigDto>, ISecuredRequest
+public class DeleteBuildingConfigCommand : IRequest<DeletedBuildingConfigDto>, ICacheRemoverRequest, ISecuredRequest
 {
     public string Id { get; set; }
 
     public string[] Roles => new[] { ADMIN, GAMER, VIP };
+
+    public bool BypassCache { get; set; }
+    public string CacheKey => $"GetListBuildingConfigQuery";
+    public string CacheGroupKey => "GetBuildingConfig";
+    public TimeSpan? SlidingExpiration { get; set; }
+
+    string[]? ICacheRemoverRequest.CacheGroupKey => ["BuildingTypeList", "BuildingConfigById", "BuildingConfigList", "BuildingConfigListWithPagination"];
 
     public class DeleteBuildingConfigCommandHandler : IRequestHandler<DeleteBuildingConfigCommand, DeletedBuildingConfigDto>
     {

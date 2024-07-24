@@ -9,10 +9,11 @@ using Application.Features.BuildingConfigs.Rules;
 using MongoDB.Driver;
 using Domain.Enums;
 using Application.Services.ImageServices;
+using Core.Application.Pipelines.Caching;
 
 namespace Application.Features.BuildingConfigs.Commands;
 
-public class UpdateBuildingConfigCommand : IRequest<UpdatedBuildingConfigDto>, ISecuredRequest
+public class UpdateBuildingConfigCommand : IRequest<UpdatedBuildingConfigDto>, ICacheRemoverRequest, ISecuredRequest
 {
     public string Id { get; set; }
     public BuildingTypeEnum BuildingType { get; set; }
@@ -20,6 +21,13 @@ public class UpdateBuildingConfigCommand : IRequest<UpdatedBuildingConfigDto>, I
     public int ConstructionTime { get; set; }
 
     public string[] Roles => new[] { ADMIN, GAMER, VIP };
+
+    public bool BypassCache { get; set; }
+    public string CacheKey => $"GetListBuildingConfigQuery";
+    public string CacheGroupKey => "GetBuildingConfig";
+    public TimeSpan? SlidingExpiration { get; set; }
+
+    string[]? ICacheRemoverRequest.CacheGroupKey => ["BuildingTypeList", "BuildingConfigById", "BuildingConfigList", "BuildingConfigListWithPagination"];
 
     public class UpdateBuildingConfigCommandHandler(
         IBuildingConfigRepository buildingConfigDal, 

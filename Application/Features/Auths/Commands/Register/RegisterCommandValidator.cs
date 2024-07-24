@@ -9,16 +9,20 @@ public class RegisterCommandValidator : AbstractValidator<RegisterCommand>
     {
         RuleFor(c => c.UserForRegisterDto.Email)
             .NotEmpty()
+            .WithMessage(EmailMustNotBeEmpty)
+
             .EmailAddress()
             .WithMessage(YourMailIsNotAvailable);
 
         RuleFor(c => c.UserForRegisterDto.Username)
             .NotEmpty()
+            .WithMessage(UsernameMustNotBeEmpty)
             .MinimumLength(3)
             .WithMessage(UsernameMinimumNumberOfCharacters);
 
         RuleFor(c => c.UserForRegisterDto.Password)
                 .NotEmpty()
+                .WithMessage(PasswordMustNotBeEmpty)
                 .MinimumLength(6)
                 .WithMessage(PasswordMinimumNumberOfCharacters)
                 .Must(ContainUppercase)

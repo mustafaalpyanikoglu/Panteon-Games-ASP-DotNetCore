@@ -26,4 +26,7 @@ public static class AuthMessages
     public const string PasswordMustContainNumber = "Password must contain numbers";
     public const string ProjectTaskStatusCannotBeNull = "Project task status can not be null.";
     public const string SecurityCodeCannotBeEmpty = "Security code cannot be empty";
+    public const string UsernameMustNotBeEmpty = "Username must not be empty!";
+    public const string PasswordMustNotBeEmpty = "Password must not be empty!";
+    public const string EmailMustNotBeEmpty = "Email must not be empty!";
 }

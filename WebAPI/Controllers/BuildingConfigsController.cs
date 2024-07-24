@@ -2,8 +2,11 @@
 using Application.Features.BuildingConfigs.Commands.CreateBuildingConfig;
 using Application.Features.BuildingConfigs.Commands.DeleteBuildingConfig;
 using Application.Features.BuildingConfigs.Dtos;
+using Application.Features.BuildingConfigs.Queries.GetBuildingTypeList;
 using Application.Features.BuildingConfigs.Queries.GetByIdBuildingConfig;
 using Application.Features.BuildingConfigs.Queries.GetListBuildingConfig;
+using Application.Features.BuildingConfigs.Queries.GetListBuildingConfigWithPagination;
+using Core.Application.Requests;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers;
@@ -12,32 +15,48 @@ namespace WebAPI.Controllers;
 [ApiController]
 public class BuildingConfigsController : BaseController
 {
-    [HttpPost("add")]
+    [HttpPost]
     public async Task<IActionResult> Add(CreateBuildingConfigCommand createBuildingConfigCommand)
     {
         CreatedBuildingConfigDto result = await Mediator.Send(createBuildingConfigCommand);
         return Created("", result);
     }
 
-    [HttpPost("delete")]
+    [HttpDelete]
     public async Task<IActionResult> Delete(DeleteBuildingConfigCommand deleteBuildingConfigCommand)
     {
         DeletedBuildingConfigDto result = await Mediator.Send(deleteBuildingConfigCommand);
         return Ok(result);
     }
 
-    [HttpPost("update")]
+    [HttpPut]
     public async Task<IActionResult> Update(UpdateBuildingConfigCommand updateBuildingConfigCommand)
     {
         UpdatedBuildingConfigDto result = await Mediator.Send(updateBuildingConfigCommand);
         return Ok(result);
     }
 
-    [HttpGet("getlist")]
+    [HttpGet]
     public async Task<IActionResult> GetList()
     {
         GetListBuildingConfigQuery getListBuildingConfigQuery = new() { };
         var result = await Mediator.Send(getListBuildingConfigQuery);
+        return Ok(result);
+    }
+
+    [HttpGet("[action]")]
+    public async Task<IActionResult> GetBuildingTypeList()
+    {
+        GetBuildingTypeListQuery getListBuildingConfigQuery = new() { };
+        var result = await Mediator.Send(getListBuildingConfigQuery);
+        return Ok(result);
+    }
+
+    [HttpGet("[action]")]
+    public async Task<IActionResult> GetListWithPagination([FromQuery] PageRequest pageRequest)
+    {
+        GetListBuildingConfigWithPaginationQuery getListBuildingConfigWithPagination = new() { PageRequest = pageRequest };
+        var result = await Mediator.Send(getListBuildingConfigWithPagination);
         return Ok(result);
     }
 
