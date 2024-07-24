@@ -18,10 +18,10 @@ builder.Services.AddInfrastructureServices();
 builder.Services.AddSecurityServices();
 
 //builder.Services.AddDistributedMemoryCache();
-//builder.Services.AddStackExchangeRedisCache(redisOptions =>
-//{
-//    redisOptions.Configuration = builder.Configuration.GetConnectionString("RedisLocalConnectionString");
-//});
+builder.Services.AddStackExchangeRedisCache(redisOptions =>
+{
+    redisOptions.Configuration = builder.Configuration.GetConnectionString("RedisCloudConnectionString");
+});
 
 builder.Services.AddCors(opt => opt.AddDefaultPolicy(p => { p.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader(); }));
 builder.Services.AddHttpContextAccessor();
@@ -91,7 +91,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 //if (app.Environment.IsProduction())
-    app.ConfigureCustomExceptionMiddleware();
+app.ConfigureCustomExceptionMiddleware();
 
 app.UseAuthentication();
 app.UseAuthorization();

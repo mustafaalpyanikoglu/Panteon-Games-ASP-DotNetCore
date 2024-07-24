@@ -1,4 +1,5 @@
-﻿using MongoDB.Driver;
+﻿using Core.Persistence.Paging;
+using MongoDB.Driver;
 using System.Linq.Expressions;
 
 namespace Core.Persistence.MongoDbRepositories;
@@ -22,4 +23,10 @@ public interface IMongoDbRepository<T, in TKey>
         bool ascending = true,
         int pageIndex = 0,
         int pageSize = 20);
+
+    Task<IPaginate<T>> GetListAsync(
+             Expression<Func<T, bool>>? predicate = null,
+             int index = 0,
+             int size = 10,
+             CancellationToken cancellationToken = default);
 }

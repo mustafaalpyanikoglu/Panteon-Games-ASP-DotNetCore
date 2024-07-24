@@ -9,11 +9,13 @@ public class LoginCommandValidator : AbstractValidator<LoginCommand>
     {
         RuleFor(c => c.UserForLoginDto.Username)
             .NotEmpty()
+            .WithMessage(UsernameMustNotBeEmpty)
             .MinimumLength(3)
             .WithMessage(UsernameMinimumNumberOfCharacters);
 
         RuleFor(c => c.UserForLoginDto.Password)
                 .NotEmpty()
+                .WithMessage(PasswordMustNotBeEmpty)
                 .MinimumLength(6)
                 .WithMessage(PasswordMinimumNumberOfCharacters);
     }
