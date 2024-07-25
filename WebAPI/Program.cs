@@ -50,7 +50,7 @@ builder.Services.AddCors(opt =>
     opt.AddPolicy("panteonGamesPolicy", policy =>
     {
         policy
-            .WithOrigins("http://localhost:3000", "http://localhost:3001")
+            .WithOrigins("http://localhost:3000", "http://localhost:3001", "https://panteon-games-react.vercel.app")
             .AllowAnyMethod()
             .AllowAnyHeader()
             .AllowCredentials();
